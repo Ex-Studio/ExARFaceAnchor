@@ -5,10 +5,14 @@ struct ContentView: View {
     @ObservedObject var frontCameraViewController = FrontCameraViewController()
 
     var body: some View {
-        ZStack {
-            FrontCameraView(frontCameraViewController: frontCameraViewController)
-                .edgesIgnoringSafeArea(.all)
-            SmilingBadgeView(isSmiling: frontCameraViewController.faceModel.isSmiling)
+        GeometryReader { proxy in
+            HStack(alignment: .top) {
+                FrontCameraView(frontCameraViewController: frontCameraViewController)
+                    .cornerRadius(16)
+                    .padding(8)
+                    .frame(width: 1 / 4 * proxy.size.width, height: 1 / 4 * proxy.size.height)
+                FaceDataView(faceModel: frontCameraViewController.faceModel)
+            }
         }
     }
 }
@@ -23,16 +27,15 @@ struct FrontCameraView: UIViewRepresentable {
     func updateUIView(_: ARView, context _: Context) {}
 }
 
-struct SmilingBadgeView: View {
-    var isSmiling: Bool
+struct FaceDataView: View {
+    var faceModel: FaceModel
 
     var body: some View {
         return VStack {
-            Text(isSmiling ? "Smiling 😄" : "Not Smiling 😐")
-                .padding()
-                .foregroundColor(isSmiling ? .green : .red)
-                .background(RoundedRectangle(cornerRadius: 25).fill(.regularMaterial))
+            Text(faceModel.description)
             Spacer()
+            Text(faceModel.description)
+                .lineLimit(8)
         }
     }
 }
