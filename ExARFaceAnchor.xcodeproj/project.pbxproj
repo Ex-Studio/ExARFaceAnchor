@@ -13,6 +13,7 @@
 		484734E52A29247300C6510A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484734E42A29247300C6510A /* Preview Assets.xcassets */; };
 		484734ED2A29268600C6510A /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734EC2A29268600C6510A /* FaceModel.swift */; };
 		484734EF2A29269200C6510A /* FrontCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734EE2A29269200C6510A /* FrontCameraViewController.swift */; };
+		484734F22A2937E700C6510A /* simd+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734F12A2937E700C6510A /* simd+toString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		484734EB2A29248100C6510A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		484734EC2A29268600C6510A /* FaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceModel.swift; sourceTree = "<group>"; };
 		484734EE2A29269200C6510A /* FrontCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraViewController.swift; sourceTree = "<group>"; };
+		484734F12A2937E700C6510A /* simd+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "simd+toString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				484734DF2A29247100C6510A /* ContentView.swift */,
 				484734EE2A29269200C6510A /* FrontCameraViewController.swift */,
 				484734EC2A29268600C6510A /* FaceModel.swift */,
+				484734F02A2937D500C6510A /* Extensions */,
 				484734E12A29247300C6510A /* Assets.xcassets */,
 				484734E32A29247300C6510A /* Preview Content */,
 			);
@@ -73,6 +76,14 @@
 				484734E42A29247300C6510A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		484734F02A2937D500C6510A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				484734F12A2937E700C6510A /* simd+toString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				484734E02A29247100C6510A /* ContentView.swift in Sources */,
+				484734F22A2937E700C6510A /* simd+toString.swift in Sources */,
 				484734DE2A29247100C6510A /* ExARFaceAnchorApp.swift in Sources */,
 				484734ED2A29268600C6510A /* FaceModel.swift in Sources */,
 				484734EF2A29269200C6510A /* FrontCameraViewController.swift in Sources */,

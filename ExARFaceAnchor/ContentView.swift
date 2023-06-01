@@ -9,7 +9,7 @@ struct ContentView: View {
             HStack(alignment: .top) {
                 FrontCameraView(frontCameraViewController: frontCameraViewController)
                     .cornerRadius(16)
-                    .padding(8)
+                    .padding([.horizontal], 8)
                     .frame(width: 1 / 4 * proxy.size.width, height: 1 / 4 * proxy.size.height)
                 FaceDataView(faceModel: frontCameraViewController.faceModel)
             }
@@ -31,11 +31,11 @@ struct FaceDataView: View {
     var faceModel: FaceModel
 
     var body: some View {
-        return VStack {
-            Text(faceModel.description)
+        return VStack(alignment: .leading) {
+            Text(faceModel.transform.toString)
+                .font(.system(.body, design: .monospaced))
             Spacer()
-            Text(faceModel.description)
-                .lineLimit(8)
+            Text(faceModel.console)
         }
     }
 }

@@ -1,11 +1,13 @@
 import ARKit
 
 struct FaceModel {
-    var description = ""
+    var transform = simd_float4x4()
 
+    var console = ""
     mutating func update(faceAnchor: ARFaceAnchor) {
         // https://developer.apple.com/documentation/arkit/arfaceanchor
 
-        description = faceAnchor.description
+        transform = faceAnchor.transform
+        console = "\(faceAnchor.transform)"
     }
 }
