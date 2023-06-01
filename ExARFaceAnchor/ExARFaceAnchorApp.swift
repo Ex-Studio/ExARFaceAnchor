@@ -1,5 +1,3 @@
-// ExARFaceAnchorApp.swift
-
 import SwiftUI
 
 @main

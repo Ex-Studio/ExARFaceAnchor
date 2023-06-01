@@ -11,6 +11,8 @@
 		484734E02A29247100C6510A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734DF2A29247100C6510A /* ContentView.swift */; };
 		484734E22A29247300C6510A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484734E12A29247300C6510A /* Assets.xcassets */; };
 		484734E52A29247300C6510A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484734E42A29247300C6510A /* Preview Assets.xcassets */; };
+		484734ED2A29268600C6510A /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734EC2A29268600C6510A /* FaceModel.swift */; };
+		484734EF2A29269200C6510A /* FrontCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484734EE2A29269200C6510A /* FrontCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		484734DF2A29247100C6510A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		484734E12A29247300C6510A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484734E42A29247300C6510A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		484734EB2A29248100C6510A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		484734EC2A29268600C6510A /* FaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceModel.swift; sourceTree = "<group>"; };
+		484734EE2A29269200C6510A /* FrontCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 		484734D12A29247100C6510A = {
 			isa = PBXGroup;
 			children = (
+				484734EB2A29248100C6510A /* README.md */,
 				484734DC2A29247100C6510A /* ExARFaceAnchor */,
 				484734DB2A29247100C6510A /* Products */,
 			);
@@ -53,6 +59,8 @@
 			children = (
 				484734DD2A29247100C6510A /* ExARFaceAnchorApp.swift */,
 				484734DF2A29247100C6510A /* ContentView.swift */,
+				484734EE2A29269200C6510A /* FrontCameraViewController.swift */,
+				484734EC2A29268600C6510A /* FaceModel.swift */,
 				484734E12A29247300C6510A /* Assets.xcassets */,
 				484734E32A29247300C6510A /* Preview Content */,
 			);
@@ -139,6 +147,8 @@
 			files = (
 				484734E02A29247100C6510A /* ContentView.swift in Sources */,
 				484734DE2A29247100C6510A /* ExARFaceAnchorApp.swift in Sources */,
+				484734ED2A29268600C6510A /* FaceModel.swift in Sources */,
+				484734EF2A29269200C6510A /* FrontCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = C4W6UUH267;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the front camera to capture your face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = C4W6UUH267;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app will use the front camera to capture your face.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
