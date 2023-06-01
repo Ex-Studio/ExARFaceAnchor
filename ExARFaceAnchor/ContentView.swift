@@ -33,11 +33,15 @@ struct FaceDataView: View {
     var body: some View {
         return VStack(alignment: .leading) {
             Text("transform\n" + faceModel.transform.toString)
+
             Text("leftEyeTransform\n" + faceModel.leftEyeTransform.toString)
             Text("rightEyeTransform\n" + faceModel.rightEyeTransform.toString)
             Text("lookAtPoint\n" + faceModel.lookAtPoint.toString)
+
             Spacer()
+
             Text(faceModel.console)
+                .lineLimit(4)
         }
         .font(.system(.body, design: .monospaced))
     }
