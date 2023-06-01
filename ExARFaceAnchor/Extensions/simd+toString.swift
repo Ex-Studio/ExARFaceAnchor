@@ -15,7 +15,13 @@ extension simd_float4x4 {
 
 extension simd_float4 {
     var toString: String {
-        return "[\(self[0].toString), \(self[1].toString), \(self[2].toString), \(self[3].toString)]"
+        return "[\(self[0].toString),\(self[1].toString),\(self[2].toString),\(self[3].toString)]"
+    }
+}
+
+extension simd_float3 {
+    var toString: String {
+        return "[\(self[0].toString),\(self[1].toString),\(self[2].toString)]"
     }
 }
 
